@@ -1,4 +1,4 @@
+/deploy.py
 *.pdf
 *.docx
 *.zip
-deploy.py
