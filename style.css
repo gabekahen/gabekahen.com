@@ -32,9 +32,10 @@ body {
   text-decoration: none;
   display: inline-block;
   box-shadow: 1px 1px #444;
+  transition: 0.2s ease;
 }
-.button:active {
-  box-shadow: 0px 0px;
+.button:hover {
+  background-color: black;
 }
 .title.subtext {
   color:#AAA;
@@ -66,5 +67,9 @@ footer {
   font-size: 40;
 }
 .social-media a {
+  transition: 0.2s ease;
   color: #AAA;
+}
+.social-media a:hover {
+  color: black;
 }
