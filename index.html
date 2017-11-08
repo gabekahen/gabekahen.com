@@ -18,10 +18,38 @@
       <p class="skills"><i class="fa fa-cogs" aria-hidden="true"></i>Ansible, Salt</p>
       <p class="skills"><i class="fa fa-ship" aria-hidden="true"></i>Docker</p>
       <p class="skills"><i class="fa fa-code-fork" aria-hidden="true"></i>git</p>
-      <ul>
-        <li><a href="gabekahen_2017_resume.pdf" class="button"><h3>Resume</h3></a></li>
-      </ul>
+      <li>
+				<div class="resume-dropdown">
+					<button onclick="myFunction()" class="button">Resume</button>
+				  <div id="myDropdown" class="dropdown-content">
+				    <a href="gabekahen_2017_resume.pdf">PDF</a>
+				    <a href="gabekahen_2017_resume.docx">DOCX</a>
+				  </div>
+				</div>
+			</li>
     </header>
+		<script>
+		/* When the user clicks on the button,
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		    document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('button')) {
+
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+		</script>
     <footer>
       <p id="copyright"><font size="2">&copy; Gabe Kahen 2017</font></p>
       <span class="social-media">
